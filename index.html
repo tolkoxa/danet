@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto:wght@400;500;700&family=Scada:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>ДА / НЕТ</title>
+</head>
+
+<body>
+    <div class="container" id="watch-example">
+        <div class="top-logo">
+            <span class="logo-text">Да</span>
+            <span class="logo-line">/</span>
+            <span class="logo-text">Нет</span>
+        </div>
+        <div class="question">
+            <p class="question-text">Задай вопрос, на который можно ответить «<b>да</b>» или «<b>нет</b>».</p>
+            <p class="question-text" v-if="answer">{{ answer }}</p>
+            <p class="question-text" v-else>&nbsp;</p>
+        </div>
+        <div class="answer">
+            <div class="answer-input">
+                <textarea v-model="question" class="textarea" autofocus id="text"></textarea>
+            </div>
+
+            <div class="footer">
+                <div class="left">&nbsp;</div>
+                <div class="center">
+                    <p class="answer-text" v-if="yesno">{{ yesno }}</p>
+                    <p v-else>&nbsp;</p>
+                </div>
+                <div class="right">
+                    <p>Сделал <a class="right-link" href="https://tolkoxa.ru">tolkoxa.ru</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

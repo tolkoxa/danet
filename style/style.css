@@ -1,0 +1,147 @@
+*,
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    /* padding: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.top-logo {
+    margin: 0 0 30px 0;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logo-text {
+    margin: 0 0 0 -10px;
+    display: block;
+    font-family: Scada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15vmax;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.logo-line {
+    display: block;
+    font-family: Oxygen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25vmax;
+    line-height: 12vw;
+    color: #FF0000;
+}
+
+.question {
+    margin: 0 0 20px 0;
+    padding: 0 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    font-size: 2.5vmax;
+    color: #000;
+}
+
+.textarea {
+    width: 100%;
+    /* height: 50%; */
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 3.7vmax;
+    font-weight: 400;
+    padding: 10px 0 0 0;
+    color: red;
+    background-image: none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+.answer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.answer-text {
+    font-family: Scada;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10vmax;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.answer-input {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 95%;
+    text-align: center;
+    position: relative;
+}
+
+.answer-input:before {
+    position: absolute;
+    content: '\276F';
+    font-size: 50px;
+    font-weight: 100;
+    color: red;
+    top: 0px;
+    left: -35px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.left {
+    width: 5%;
+}
+
+.center {
+    width: 80%;
+    height: 150px;
+}
+
+.right {
+    width: 13%;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.right-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.right-link:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.right-link:visited {
+    color: black;
+    text-decoration: underline;
+}
